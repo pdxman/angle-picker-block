@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/angle-picker-block",
+	"version": "0.1.0",
+	"title": "Angle Picker Block",
+	"category": "widgets",
+	"icon": "admin-site",
+	"description": "Display images with an angle that you choose.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "angle-picker-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"inputValue":{
+			"type": "string"
+		},
+		"angleValue":{
+			"type": "number",
+			"default": 0
+		}
+	}	
+}
