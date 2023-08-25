@@ -31,16 +31,6 @@ export default function Edit({attributes, setAttributes}) {
 	return (
 		<div {...useBlockProps}>
 			<InspectorControls>
-				{/* <TextControl
-					label="Add to array"
-					value={inputValue}
-					onChange={handleInput}
-					type="string"
-					placeholder="enter text here"
-				/> */}
-				{/* <button
-					onClick={handleClick}
-				>Press</button> */}
 				<AnglePickerControl 
 					value={ angleValue } 
 					onChange={ handleAngleChange } 
@@ -51,11 +41,8 @@ export default function Edit({attributes, setAttributes}) {
 					'Angle Picker Block – hello from the editor!',
 					'angle-picker-block'
 				) }
-				{/* <h2>Input Value: {inputValue}</h2> */}
 				<h2>Angle Value: {angleValue}</h2>
 				<div style={{
-					// background: "red",
-					// padding: "1em",
 					width: "8em",
 					height: "8em",
 					textAlign: "center",
